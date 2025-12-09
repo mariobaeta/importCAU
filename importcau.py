@@ -39,7 +39,7 @@ direitos = (direitos_percentual / 100) * valor_aduaneiro
 iva = (iva_percentual / 100) * (valor_aduaneiro + direitos + taxa_optativa)
 
 # Valor total
-valor_total = valor_aduaneiro + direitos + iva + taxa_optativa
+valor_total = valor_aduaneiro + direitos + taxa_optativa
 
 # Exibição dos resultados
 st.subheader("Resultados")
