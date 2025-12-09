@@ -46,6 +46,8 @@ st.subheader("Resultados")
 st.write(f"Valor Aduaneiro (EUR): €{valor_aduaneiro:.2f}")
 st.write(f"Taxa Optativa ({transporte}, {blocos} bloco(s) de 100kg): €{taxa_optativa:.2f}")
 st.write(f"Direitos Aduaneiros ({direitos_percentual}%): €{direitos:.2f}")
-st.write(f"IVA ({iva_percentual}%): €{iva:.2f}")
 st.write(f"**Valor Total a Pagar: €{valor_total:.2f}**")
+
+st.write(f"Direitos Aduaneiros ({direitos_percentual}%): €{direitos:.2f}")
+st.write(f"IVA ({iva_percentual}%): €{iva:.2f}")
 
