@@ -49,7 +49,7 @@ direitos = (direitos_percentual / 100) * valor_aduaneiro
 iva = (iva_percentual / 100) * (valor_aduaneiro + direitos + taxa_optativa)
 
 # Valor Total a pagar na alfândega
-valor_total = valor_aduaneiro + direitos + iva + taxa_optativa
+valor_total = valor_aduaneiro + direitos + taxa_optativa
 
 # ===================== RESULTADOS =====================
 
@@ -59,5 +59,5 @@ st.write(f"Taxa Optativa ({transporte}, {blocos} bloco(s) de 100kg): **€{taxa_
 st.write(f"Direitos Aduaneiros ({direitos_percentual}%): **€{direitos:.2f}**")
 st.write(f"IVA ({iva_percentual}%): **€{iva:.2f}**")
 st.write("---")
-st.write(f"### 💰 Valor Total a Pagar: **€{valor_total:.2f}**")
+st.write(f"### 💰 Valor Total s/IVA: **€{valor_total:.2f}**")
 
